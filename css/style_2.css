@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+    line-height: 1.6;
+
+    background-image: url("../img/pexels-padrinan-19670.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: brown;
+}
+
+.navbar {
+    background-color: #222;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    display: block;
+    padding: 16px 0;
+    color: rgb(247, 242, 242);
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid #fff;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.quote-item {
+    background-color: #ffffff19;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 4px solid #333;
+}
+
+.quote-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.quote-item p {
+    margin-bottom: 15px;
+    white-space: pre-line;
+}
+
+.quote-item small {
+    color: #777;
+}
+
+form {
+    background-color: #ffffff0b;
+    padding: 25px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
